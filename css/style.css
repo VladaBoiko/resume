@@ -1,0 +1,235 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f7fa;
+}
+/* main content section-->*/
+.mcs {
+  padding: 100px 90px 100px 90px;
+}
+
+.main-content-section {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  color: #000;
+  background-color: #fff;
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-bottom: 10px;
+}
+/*.about-me-section*/
+.about-me-section {
+  margin: 0 0 40px 0;
+}
+
+.about-me-profesion {
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #000;
+  height: 17px;
+}
+.my-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.theory {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  width: 400px;
+}
+/*.my-project-section*/
+.my-project-section {
+  margin-bottom: 50px;
+}
+.my-project-list {
+  padding: 0 0 0 17px;
+}
+.projects-item {
+  color: #000;
+  font-weight: bold;
+}
+.my-projects-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+.mi-pr-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin-left: 10px;
+}
+.my-proj-brack {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.my-work-expierence-section {
+}
+.company {
+  color: #fb6d3a;
+}
+.company-position {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+.work-exp-time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0 0 8px 0;
+}
+.palochka {
+  color: #000;
+}
+.work-exp-doing {
+  padding-left: 14px;
+}
+.work-exp-doing-two {
+  padding-left: 13px;
+}
+.work-exp-punkt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin: 8px 0 0 0;
+}
+.my-work-expierence-company {
+  margin: 15px 0 0 0;
+}
+
+/*education-section */
+.punct-education {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
+  margin: 12px 0 11px 0;
+}
+.punct-education-management {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 11px 0 0 0;
+}
+.data-education {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+/*sidebar section*/
+.site-bar-section {
+  background-color: #1e2939;
+  width: 370px;
+  padding: 40px 0;
+}
+
+.tech-skill-section {
+  margin: 50px 0 0 40px;
+}
+.contacts-section {
+  margin: 50px 0 0 40px;
+}
+.contacts-section-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8e949c;
+}
+
+.contacts-section-type {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 7px;
+}
+.tech-skill-section {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0 0 40px 0;
+}
+.tech-skill-list {
+  padding: 0 0 0 13px;
+}
+.tech-skill-li {
+  color: #fb6d3a;
+}
+
+.tech-skills-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.soft-skills-section {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  padding: 5px 0 0 12px;
+}
+
+.site-bar-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.site-bar-title-two {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 10px;
+  padding-left: 28px;
+  padding: 10px 0 0 28px;
+}
