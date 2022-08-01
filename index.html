@@ -22,68 +22,190 @@
         <a class="header-link second">PORTFOLIO</a>
       </div>
     </header>
-    <aside class="sidebar">
-      <div class="sidebar-wrapper">
-        <img src="./img/photo.jpg" alt="me)" />
-        <div class="contacts-wrapper">
-          <!-- <ul class="contacts">
-            <li class="contacts-item">
-              <a class="contacts-link" href="tel:+380671053671">+38-067-105-36-71</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:bermezha@gmail.com">bermezha@gmail.com</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:bermezha@gmail.com">linkedin</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:bermezha@gmail.com">@VladaBoiko</a>
-            </li>
-          </ul> -->
+    <main>
+      <div class="container">
+        <aside class="sidebar">
+          <picture class="hero-ice-cream__img">
+            <source
+              srcset="./img/photo_1.jpg 1x, ./img/photo_1.jpg 2x"
+              type="image/jpg"
+              media="(max-width: 767.9px)"
+            />
+            <source
+              srcset="./img/photo.jpg 1x, ./img/photo.jpg 2x"
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="./img/photo.jpg" alt="milk" />
+          </picture>
+          <section class="contacts-sec contacts-wrapper">
+            <ul class="contacts">
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+380671053671"
+                  ><svg class="item__icons" width="20" height="20">
+                    <use href="./img/icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:bermezha@gmail.com"
+                  ><svg class="item__icons" width="20" height="20">
+                    <use href="./img/icons.svg#email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:bermezha@gmail.com"
+                  ><svg class="item__icons" width="20" height="20">
+                    <use href="./img/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:bermezha@gmail.com"
+                  ><svg class="item__icons" width="20" height="20">
+                    <use href="./img/icons.svg#github"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="tech-skills-sec wrapper">
+            <h2 class="sidebar-title">Tech-skills</h2>
+            <ul class="tech-skills">
+              <li class="sidebar-skills__item"><span>HTML5</span></li>
+              <li class="sidebar-skills__item"><span>CSS3</span></li>
+              <li class="sidebar-skills__item"><span>GIT</span></li>
+              <li class="sidebar-skills__item"><span>WebPack*</span></li>
+              <li class="sidebar-skills__item"><span>JavaScript</span></li>
+              <li class="sidebar-skills__item"><span>React*</span></li>
+              <li class="sidebar-skills__item"><span>Node.js*</span></li>
+              <li class="sidebar-skills__item"><span>Parsel*</span></li>
+              <li class="sidebar-skills__item"><span>Figma*</span></li>
+            </ul>
+          </section>
+          <section class="soft-skills-sec wrapper">
+            <h2 class="sidebar-title">Soft-skills</h2>
+            <ul class="soft-skills">
+              <li class="sidebar-skills__item"><span>Communication</span></li>
+              <li class="sidebar-skills__item"><span>Teamwork</span></li>
+              <li class="sidebar-skills__item"><span>Training</span></li>
+              <li class="sidebar-skills__item"><span>Analytical skills</span></li>
+              <li class="sidebar-skills__item"><span>Leadership</span></li>
+              <li class="sidebar-skills__item"><span>Problem solving</span></li>
+              <li class="sidebar-skills__item"><span>Education</span></li>
+              <li class="sidebar-skills__item"><span>Self-education</span></li>
+            </ul>
+          </section>
+          <section class="languages-sec wrapper">
+            <h2 class="sidebar-title">Languages</h2>
+            <ul class="languages">
+              <li class="sidebar-skills__item"><span>Ukrainian (native speaker)</span></li>
+              <li class="sidebar-skills__item"><span>Russian (native speaker)</span></li>
+              <li class="sidebar-skills__item"><span>English (Upper-intermediate)</span></li>
+              <li class="sidebar-skills__item"><span>Spanish (open to learning)</span></li>
+            </ul>
+          </section>
+
+          <div class="wrapper">
+            <p class="sidebar-title"><a class="nav-link second">PROJECTS</a></p>
+          </div>
+        </aside>
+      </div>
+      <div class="main-information">
+        <div class="container">
+          <section class="about-me-section">
+            <h2 class="profession">Front-End Developer</h2>
+            <h1 class="name">Boiko Vladyslava</h1>
+            <p class="describe">
+              How I can describe myself?<br />
+              I have few hobbies: reading, walking, cooking and coding 😜<br />
+              I like to learn something new and different (like Spanish language).<br />
+              When I decided to become a IT-specialist, I chose the way of developer.<br />
+              And I didn't regret it! Because I'm font of it. <br />I'm a leader and responsible
+              team gamer. I also can play solo ✅ <br />Conflicts resolution? It's about me. I
+              worked in customer service for a long time, and I know people and their desires and
+              their abilities too. <br />Now, I know JS (and not only it) 😉 <br />I can write about
+              myself more, but we can get in touch and you'll can ask everything, what do you want
+              to know 🌚🌝 <br /><span class="interest">Interested? Let's connect with me! 💌</span>
+            </p>
+          </section>
+
+          <section class="expierence-section">
+            <h3 class="main-content-title">Work Experience</h3>
+
+            <!--company three-->
+            <div class="my-work-expierence-company">
+              <p class="position">
+                Front-End Developer <span class="position-accent">Freelance</span>
+              </p>
+              <p class="work-exp-time">
+                September 2019 - up to now <span class="palochka">|</span> Country
+              </p>
+
+              <ul class="work-list">
+                <li class="work-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </li>
+                <li class="work-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="work-item">Risus commodo viverra maecenas.</li>
+                <li class="work-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                </li>
+              </ul>
+            </div>
+
+            <!--company two-->
+            <div>
+              <p class="position">
+                Front-End Developer <span class="position-accent">Freelance</span>
+              </p>
+
+              <p class="work-exp-time">Oktober 2016 - now <span class="line">|</span> Country</p>
+
+              <ul class="work-list">
+                <li class="work-item">Адмiнiстратор залу та кухнi</li>
+                <li class="work-item">Контроль якостi обслуговування</li>
+                <li class="work-item">Контроль закупки товару для бару</li>
+                <li class="work-item">Контроль розрахункових операцій по барній продукції</li>
+              </ul>
+            </div>
+
+            <!--company one-->
+            <div>
+              <p class="position">
+                Front-End Developer <span class="position-accent">Freelance</span>
+              </p>
+
+              <p class="work-exp-time">
+                June 2014 - February 2015 <span class="line">|</span> Country
+              </p>
+
+              <ul class="work-list">
+                <li class="work-item">Обов'язок 1</li>
+                <li class="work-item">Обов'язок 2.</li>
+                <li class="work-item">Обов'язок 3</li>
+              </ul>
+            </div>
+          </section>
+
+          <!--education-->
+          <section class="expierence-section">
+            <h3 class="main-content-title">Education</h3>
+            <h4 class="punct-education">Lviv Polytechnic National University</h4>
+            <h5 class="punct-education-management">Chemical technology</h5>
+            <p class="data-education">
+              September 2013 - June 2017 <span class="line">|</span> Country
+            </p>
+
+            <h4 class="punct-education">GoIT school</h4>
+            <h5 class="punct-education-management">FullStack developer</h5>
+            <p class="data-education">
+              March 2022 - September 2022 <span class="line">|</span> Country
+            </p>
+          </section>
         </div>
       </div>
-
-      <div class="tech-wrapper">
-        <h2 class="tech-title">Tech-skills</h2>
-        <ul class="tech-skills">
-          <li class="tech-skills__item">HTML5</li>
-          <li class="tech-skills__item">CSS3</li>
-          <li class="tech-skills__item">GIT</li>
-          <li class="tech-skills__item">WebPack</li>
-          <li class="tech-skills__item">JavaScript</li>
-          <li class="tech-skills__item">React</li>
-          <li class="tech-skills__item">Node.js</li>
-          <li class="tech-skills__item">Parsel*</li>
-          <li class="tech-skills__item">Figma*</li>
-        </ul>
-      </div>
-      <div class="soft-wrapper">
-        <h2 class="soft-title">Soft-skills</h2>
-        <ul class="soft-skills">
-          <li class="soft-skills__item">Communication</li>
-          <li class="soft-skills__item">Teamwork</li>
-          <li class="soft-skills__item">Training</li>
-          <li class="soft-skills__item">Analytical skills</li>
-          <li class="soft-skills__item">Leadership</li>
-          <li class="soft-skills__item">Problem solving</li>
-          <li class="soft-skills__item">Education</li>
-          <li class="soft-skills__item">Self-education</li>
-        </ul>
-      </div>
-      <div class="languages-wrapper">
-        <h2 class="languages-title">Languages</h2>
-        <ul class="languages">
-          <li class="languages-item">Ukrainian (native speaker)</li>
-          <li class="languages-item">Russian (native speaker)</li>
-          <li class="languages-item">English (Upper-intermediate)</li>
-          <li class="languages-item">Spanish (open to learning)</li>
-        </ul>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link first">RESUME</a></li>
-        <li class="nav-item"><a class="nav-link second">PORTFOLIO</a></li>
-      </ul>
-    </aside>
+    </main>
   </body>
 </html>

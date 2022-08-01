@@ -1,0 +1,75 @@
+.main-information {
+  .container {
+    padding: 30px 30px;
+  }
+}
+.about-me-section {
+  margin-top: 20px;
+}
+.profession {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.name {
+  font-size: 35px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.describe {
+  //   width: 300px;
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.15;
+}
+.interest {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+}
+.expierence-section {
+  margin-top: 20px;
+}
+.main-content-title {
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+}
+.position {
+  display: block;
+  margin-top: 15px;
+  //   margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+.position-accent {
+  color: #57051d;
+}
+.work-exp-time {
+  display: block;
+  //   margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.15;
+  color: #182e3f;
+}
+.line {
+  color: #cdd2d6;
+  font-size: 20px;
+}
+.work-list {
+  list-style: circle;
+}
+.work-item {
+  color: var(--main-text-color);
+  line-height: 1.5;
+  margin-left: 30px;
+  list-style: circle;
+  font-size: 16px;
+  line-height: 1.15;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+// .work-exp-doing-two {
+// }

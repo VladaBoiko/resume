@@ -1,17 +1,9 @@
 :root {
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --focus-color: #2196F3;
-  --heigh-logo-color: black;
-  --hero-background-color: #2F303A;
-  --hero-text-color: #FFFFFF;
-  --footer-bcg-color: #2F303A;
-  --footer-logo-color: white;
-  --footer-contact-color: rgba(255, 255, 255, 0.6);
-  --nav-logo-web-color: #2196F3;
-  --cards-bcg-color: white;
-  --hero-button-fh-color: #188CE8;
-  --main-letter-spacing: 0.03em;
+  --main-text-color: black;
+  --title-text-color: rgb(48, 62, 73);
+  --focus-color: #245279;
+  --accent-background-color: #e9e9e9;
+  --background-color: white;
   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -27,7 +19,7 @@ html {
 
 body {
   font-family: "Roboto", "sans-serif";
-  color: var(--main-text-color);
+  color: var(--title-text-color);
   background-color: white;
   letter-spacing: var(--main-letter-spacing);
   font-size: 14px;
@@ -39,17 +31,17 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399.9px) {
   .container {
     width: 100%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767.9px) {
   .container {
-    width: 480px;
+    width: 400px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .container {
     width: 768px;
   }
@@ -70,7 +62,6 @@ p,
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 img {
@@ -144,7 +135,8 @@ header {
 
 aside {
   width: 100%;
-  padding: 20px 20px;
+  padding: 20px 35px;
+  background-color: var(--accent-background-color);
 }
 
 .sidebar-wrapper {
@@ -152,7 +144,162 @@ aside {
 }
 
 img {
-  top: 0;
-  left: 0;
-  width: 75%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts {
+  margin-top: 10px;
+  list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+.contacts-wrapper {
+  margin-top: 10px;
+}
+
+.contacts-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 1px solid var(--title-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-link:hover, .contacts-link:focus {
+  background-color: var(--title-text-color);
+}
+
+.item__icons {
+  fill: var(--title-text-color);
+}
+.contacts-link:hover .item__icons, .contacts-link:focus .item__icons {
+  fill: white;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .contacts-item:first-child {
+    margin-left: auto;
+  }
+  .contacts-item:last-child {
+    margin-right: auto;
+  }
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.sidebar-title {
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+}
+
+.sidebar-skills__item {
+  color: black;
+  line-height: 1.5;
+  margin-left: 30px;
+  list-style: circle;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  border: 1px solid var(--title-text-color);
+}
+.nav-link:hover, .nav-link:focus {
+  box-shadow: inset 11px 11px 46px -14px rgb(71, 65, 71);
+}
+
+.main-information .container {
+  padding: 30px 30px;
+}
+
+.about-me-section {
+  margin-top: 20px;
+}
+
+.profession {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.name {
+  font-size: 35px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.describe {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.interest {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.expierence-section {
+  margin-top: 20px;
+}
+
+.main-content-title {
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+}
+
+.position {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.position-accent {
+  color: #57051d;
+}
+
+.work-exp-time {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.15;
+  color: #182e3f;
+}
+
+.line {
+  color: #cdd2d6;
+  font-size: 20px;
+}
+
+.work-list {
+  list-style: circle;
+}
+
+.work-item {
+  color: var(--main-text-color);
+  line-height: 1.5;
+  margin-left: 30px;
+  list-style: circle;
+  font-size: 16px;
+  line-height: 1.15;
+}
+.work-item:not(:last-child) {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
