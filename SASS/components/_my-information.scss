@@ -127,8 +127,10 @@
   margin-top: 20px;
   list-style: none;
   color: var(--main-text-color);
-  width: 350px;
   background: repeating-linear-gradient(#ffffff, #ffffff 24px, #eeebeb 27px, #fffefe 0);
+  @include tablet {
+    width: 350px;
+  }
 }
 .project-item {
   display: flex;
