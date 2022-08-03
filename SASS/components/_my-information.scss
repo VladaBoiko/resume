@@ -1,6 +1,25 @@
 .main-information {
   .container {
     padding: 30px 30px;
+    @include tablet {
+      width: 100%;
+    }
+    @include desctop {
+      padding: 30px 100px 30px 60px;
+    }
+  }
+  box-shadow: 7px -3px 26px -15px rgb(90, 62, 90);
+}
+.main-wrap {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    width: 700px;
+    display: flex;
+  }
+  @include desctop {
+    width: 800px;
   }
 }
 .about-me-section {
@@ -16,7 +35,6 @@
   margin-bottom: 15px;
 }
 .describe {
-  //   width: 300px;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.15;
@@ -30,6 +48,7 @@
   margin-top: 20px;
 }
 .main-content-title {
+  text-transform: uppercase;
   font-size: 25px;
   line-height: 1.5;
   color: var(--title-text-color);
@@ -37,7 +56,6 @@
 .position {
   display: block;
   margin-top: 15px;
-  //   margin-bottom: 5px;
   font-size: 18px;
   line-height: 1.15;
   font-weight: 700;
@@ -48,7 +66,6 @@
 }
 .work-exp-time {
   display: block;
-  //   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.15;
   color: #182e3f;
@@ -56,6 +73,7 @@
 .line {
   color: #cdd2d6;
   font-size: 20px;
+  line-height: 0.5;
 }
 .work-list {
   list-style: circle;
@@ -68,8 +86,67 @@
   font-size: 16px;
   line-height: 1.15;
   &:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  &.differ:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
-// .work-exp-doing-two {
-// }
+.education-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.item-education {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.education-profession {
+  font-size: 15px;
+  color: #57051d;
+}
+.data-education {
+  font-size: 13px;
+  color: #837d7f;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.projects-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.projects-type {
+  font-size: 20px;
+  color: #57051d;
+  &.team {
+    margin-top: 30px;
+  }
+}
+.projects-list {
+  margin-top: 20px;
+  list-style: none;
+  color: var(--main-text-color);
+  width: 350px;
+  background: repeating-linear-gradient(#ffffff, #ffffff 24px, #eeebeb 27px, #fffefe 0);
+}
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0;
+}
+.project-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  &:hover,
+  &:focus {
+    color: #57051d;
+  }
+}
+.education {
+  .position,
+  .position-accent {
+    margin-bottom: 10px;
+  }
+}

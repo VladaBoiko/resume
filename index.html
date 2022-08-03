@@ -16,25 +16,19 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <div class="container header">
-        <a class="header-link first">RESUME</a>
-        <a class="header-link second">PORTFOLIO</a>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <aside class="sidebar">
-          <picture class="hero-ice-cream__img">
+    <main class="main-wrap">
+      <aside class="sidebar">
+        <div class="container">
+          <picture>
             <source
               srcset="./img/photo_1.jpg 1x, ./img/photo_1.jpg 2x"
               type="image/jpg"
-              media="(max-width: 767.9px)"
+              media="(max-width: 699.9px)"
             />
             <source
               srcset="./img/photo.jpg 1x, ./img/photo.jpg 2x"
               type="image/jpg"
-              media="(min-width: 768px)"
+              media="(min-width: 700px)"
             />
             <img src="./img/photo.jpg" alt="milk" />
           </picture>
@@ -46,6 +40,9 @@
                     <use href="./img/icons.svg#phone"></use>
                   </svg>
                 </a>
+                <a class="desk-link" href="tel:+380671053671"
+                  ><span class="contact-src">+380-(67)-105-36-71</span>
+                </a>
               </li>
               <li class="contacts-item">
                 <a class="contacts-link" href="mailto:bermezha@gmail.com"
@@ -53,18 +50,28 @@
                     <use href="./img/icons.svg#email"></use>
                   </svg>
                 </a>
+                <a class="desk-link" href="mailto:bermezha@gmail.com"
+                  ><span class="contact-src">bermezha@gmail.com</span>
+                </a>
               </li>
               <li class="contacts-item">
-                <a class="contacts-link" href="mailto:bermezha@gmail.com"
+                <a
+                  class="contacts-link"
+                  href="https://www.linkedin.com/in/vladyslava-boiko-13475b243/"
                   ><svg class="item__icons" width="20" height="20">
                     <use href="./img/icons.svg#linkedin"></use></svg
                 ></a>
+                <a class="desk-link" href="https://www.linkedin.com/in/vladyslava-boiko-13475b243/"
+                  ><span class="contact-src">Vladyslava Boiko</span>
+                </a>
               </li>
               <li class="contacts-item">
-                <a class="contacts-link" href="mailto:bermezha@gmail.com"
+                <a class="contacts-link" href="https://github.com/VladaBoiko"
                   ><svg class="item__icons" width="20" height="20">
-                    <use href="./img/icons.svg#github"></use></svg
-                ></a>
+                    <use href="./img/icons.svg#github"></use></svg></a
+                ><a class="desk-link" href="https://github.com/VladaBoiko"
+                  ><span class="contact-src">VladaBoiko</span>
+                </a>
               </li>
             </ul>
           </section>
@@ -99,18 +106,29 @@
           <section class="languages-sec wrapper">
             <h2 class="sidebar-title">Languages</h2>
             <ul class="languages">
-              <li class="sidebar-skills__item"><span>Ukrainian (native speaker)</span></li>
-              <li class="sidebar-skills__item"><span>Russian (native speaker)</span></li>
-              <li class="sidebar-skills__item"><span>English (Upper-intermediate)</span></li>
-              <li class="sidebar-skills__item"><span>Spanish (open to learning)</span></li>
+              <li class="sidebar-skills__item">
+                <span>Ukrainian <span class="level">(native speaker)</span></span>
+              </li>
+              <li class="sidebar-skills__item">
+                <span>Russian <span class="level">(native speaker)</span></span>
+              </li>
+              <li class="sidebar-skills__item">
+                <span>English <span class="level">(Upper-intermediate)</span></span>
+              </li>
+              <li class="sidebar-skills__item">
+                <span>Spanish <span class="level">(open to learning)</span></span>
+              </li>
             </ul>
           </section>
 
-          <div class="wrapper">
-            <p class="sidebar-title"><a class="nav-link second">PROJECTS</a></p>
+          <div class="wrapper project-button">
+            <p class="sidebar-title">
+              <a href="#projects" class="sidebar-title nav-link second">PROJECTS</a>
+            </p>
           </div>
-        </aside>
-      </div>
+        </div>
+      </aside>
+
       <div class="main-information">
         <div class="container">
           <section class="about-me-section">
@@ -131,7 +149,7 @@
           </section>
 
           <section class="expierence-section">
-            <h3 class="main-content-title">Work Experience</h3>
+            <h2 class="main-content-title">Work Experience</h2>
 
             <!--company three-->
             <div class="my-work-expierence-company">
@@ -139,7 +157,7 @@
                 Front-End Developer <span class="position-accent">Freelance</span>
               </p>
               <p class="work-exp-time">
-                September 2019 - up to now <span class="palochka">|</span> Country
+                September 2019 - up to now <span class="line">|</span> Country
               </p>
 
               <ul class="work-list">
@@ -190,19 +208,76 @@
           </section>
 
           <!--education-->
-          <section class="expierence-section">
-            <h3 class="main-content-title">Education</h3>
-            <h4 class="punct-education">Lviv Polytechnic National University</h4>
-            <h5 class="punct-education-management">Chemical technology</h5>
-            <p class="data-education">
-              September 2013 - June 2017 <span class="line">|</span> Country
-            </p>
+          <section class="expierence-section education">
+            <h2 class="main-content-title education-title">Education</h2>
+            <ul class="work-list">
+              <li class="work-item differ">
+                <p class="position">Lviv Polytechnic National University</p>
+                <p class="position-accent">Chemical technology</p>
+                <p class="data-education">
+                  September 2013 - June 2017 <span class="line">|</span> Country
+                </p>
+              </li>
+              <li class="work-item differ">
+                <p class="position">GoIT school</p>
+                <p class="position-accent">FullStack developer</p>
+                <p class="data-education">
+                  March 2022 - January 2023 <span class="line">|</span> Country
+                </p>
+              </li>
+            </ul>
+          </section>
 
-            <h4 class="punct-education">GoIT school</h4>
-            <h5 class="punct-education-management">FullStack developer</h5>
-            <p class="data-education">
-              March 2022 - September 2022 <span class="line">|</span> Country
-            </p>
+          <section id="projects">
+            <h2 class="main-content-title projects-title">Projects</h2>
+
+            <h3 class="projects-type">Solo-projects</h3>
+            <ul class="projects-list">
+              <li class="work-item project-item">
+                <a href="" class="project-link">WebStudio </a>
+                <p class="project-tech">[HTML+CSS]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project </a>
+                <p class="project-tech">[HTML+CSS+JS]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project </a>
+                <p class="project-tech">[React]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project </a>
+                <p class="project-tech">[Node]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project mine </a>
+                <p class="project-tech">[HTML+CSS]</p>
+              </li>
+            </ul>
+
+            <h3 class="projects-type team">Team-projects</h3>
+            <ul class="projects-list">
+              <li class="work-item project-item">
+                <a href="" class="project-link">Ice-cream </a>
+                <p class="project-tech">[HTML+CSS]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">Psychology </a>
+                <p class="project-tech">[HTML+CSS+JS]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project </a>
+                <p class="project-tech">[React]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project </a>
+                <p class="project-tech">[Node]</p>
+              </li>
+              <li class="work-item project-item">
+                <a href="" class="project-link">project mine </a>
+                <p class="project-tech">[HTML+CSS]</p>
+              </li>
+            </ul>
           </section>
         </div>
       </div>

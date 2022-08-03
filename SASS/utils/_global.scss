@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -10,7 +11,7 @@ html {
 body {
   font-family: 'Roboto', 'sans-serif';
   color: var(--title-text-color);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   letter-spacing: var(--main-letter-spacing);
   font-size: 14px;
 }
@@ -23,29 +24,16 @@ body {
   @media screen and (max-width: 399.9px) {
     width: 100%;
   }
-  @media screen and (min-width: 400px) and (max-width: 767.9px) {
+  @media screen and (min-width: 400px) and (max-width: 699.9px) {
     width: 400px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    width: 768px;
+  @media screen and (min-width: 700px) and (max-width: 799.9px) {
+    width: 700px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 800px) {
+    width: 800px;
   }
 }
-
-// .section {
-//     @media screen and (max-width: 1199px) {
-//             padding-top: 60px;
-//             padding-bottom: 60px;
-//         }
-
-//         @media screen and (min-width: 1200px) {
-//             padding-top: 94px;
-//             padding-bottom: 94px;
-//         }
-
-// }
 
 h1,
 h2,
@@ -54,10 +42,10 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
-  // list-style: none;
 }
 img {
   display: block;
@@ -87,10 +75,21 @@ button {
 a {
   display: inline-block;
   cursor: pointer;
-  padding: 14px 0;
+  text-decoration: none;
+  // padding: 14px 0;
 }
 @mixin mobile {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 699.9px) {
+    @content();
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 700px) {
+    @content();
+  }
+}
+@mixin desctop {
+  @media screen and (min-width: 800px) {
     @content();
   }
 }

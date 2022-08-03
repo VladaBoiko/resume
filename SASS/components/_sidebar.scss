@@ -1,20 +1,33 @@
 aside {
-  //   position: relative;
+  position: relative;
   width: 100%;
   padding: 20px 35px;
   background-color: var(--accent-background-color);
+  @include tablet {
+    padding-left: 5px;
+    padding-top: 330px;
+    width: 250px;
+  }
+  @include desctop {
+    padding-left: 25px;
+    padding-top: 460px;
+    width: 350px;
+  }
 }
 .sidebar-wrapper {
   display: flex;
 }
+
 img {
-  //   position: absolute;
-  // top: 0;
-  // left: 0;
-  max-width: 300px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  //   margin-right: 20px;
+  @include tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
 }
 .contacts {
   margin-top: 10px;
@@ -48,6 +61,18 @@ img {
     fill: white;
   }
 }
+.desk-link {
+  @include mobile {
+    display: none;
+  }
+  margin-left: 10px;
+  font-size: 16px;
+  color: var(--title-text-color);
+  &:hover,
+  &:focus {
+    color: #57051d;
+  }
+}
 .contacts-item {
   @include mobile {
     &:not(:last-child) {
@@ -60,20 +85,38 @@ img {
       margin-right: auto;
     }
   }
+  @include tablet {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
 }
+
 .wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.project-button {
+  @include tablet {
+    display: none;
+  }
 }
 .sidebar-title {
+  margin-bottom: 15px;
   font-size: 25px;
   line-height: 1.5;
   color: var(--title-text-color);
 }
 .sidebar-skills__item {
+  font-size: 20px;
   color: black;
   line-height: 1.5;
   margin-left: 30px;
   list-style: circle;
+}
+.languages .sidebar-skills__item {
+  margin-top: 15px;
 }
 .nav-link {
   padding: 10px 20px;
@@ -82,4 +125,10 @@ img {
   &:focus {
     box-shadow: inset 11px 11px 46px -14px rgba(71, 65, 71, 1);
   }
+}
+.level {
+  display: block;
+  font-size: 15px;
+  line-height: 0.7;
+  color: #57051d;
 }
