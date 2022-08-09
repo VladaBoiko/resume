@@ -253,6 +253,8 @@ img {
 }
 
 .main-information {
+  position: relative;
+  z-index: 3;
   box-shadow: 7px -3px 26px -15px rgb(90, 62, 90);
 }
 .main-information .container {
@@ -426,7 +428,8 @@ img {
 }
 
 .project-link {
-  text-decoration: none;
+  position: relative;
+  z-index: 2;
   color: var(--main-text-color);
 }
 .project-link:hover, .project-link:focus {

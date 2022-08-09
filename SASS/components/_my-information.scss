@@ -1,4 +1,6 @@
 .main-information {
+  position: relative;
+  z-index: 3;
   .container {
     padding: 30px 30px;
     @include tablet {
@@ -139,7 +141,9 @@
   margin-left: 0;
 }
 .project-link {
-  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  // text-decoration: none;
   color: var(--main-text-color);
   &:hover,
   &:focus {
